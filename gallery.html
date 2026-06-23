@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery | Eventful Aura by Jo | Nairobi Luxury Events</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&amp;family=Manrope:wght@200..800&amp;family=Montserrat:wght@200;300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#efcc69",
+                        "gold": "#efcc69",
+                        "mahogany": "#642714",
+                        "beige": "#dfd4cf",
+                        "background-light": "#fcfbf8",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Cormorant Garamond", "serif"],
+                        "body": ["Montserrat", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Montserrat', sans-serif;
+                @apply bg-background-light text-mahogany antialiased;
+            }
+            .serif-heading {
+                font-family: 'Cormorant Garamond', serif;
+            }
+        }
+        .glass-nav {
+            background: rgba(252, 251, 248, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .masonry {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .masonry {
+                column-count: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .masonry {
+                column-count: 3;
+            }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .gallery-img {
+            transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .masonry-item:hover .gallery-img {
+            transform: scale(1.08);
+        }
+        .filter-btn.active {
+            @apply border-mahogany text-mahogany;
+        }
+        .filter-btn {
+            @apply border-transparent text-mahogany/40;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<header class="fixed top-0 left-0 w-full z-50 px-6 py-6 lg:px-12">
+<nav class="glass-nav border border-mahogany/10 flex items-center justify-between px-10 py-4 rounded-full shadow-sm">
+<div class="flex items-center gap-3">
+<div class="flex items-center">
+        <img src="media/Assets/EA Logo.png" alt="Eventful Aura Logo" class="h-8 w-auto object-contain">
+      </div>
+<h2 class="text-mahogany text-sm font-semibold tracking-[0.3em] uppercase serif-heading">Eventful Aura</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="index.html">Home</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="services.html">Our Services</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="aboutus.html">About Us</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="catalogue.html">Our Catalogue</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="gallery.html">Gallery</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="contact.html">Contact Us</a>
+</div>
+<button class="bg-gold text-mahogany px-8 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-mahogany hover:text-white transition-all shadow-sm">
+            <a href="https://wa.link/q2hmia">Book Consultation</a>
+        </button>
+</nav>
+</header>
+<main class="pt-40 pb-32">
+<section class="px-6 lg:px-20 mb-20 text-center">
+<span class="text-gold text-xs font-bold tracking-[0.4em] uppercase mb-4 block">Portfolio</span>
+<h1 class="text-mahogany text-6xl md:text-8xl serif-heading font-light mb-8">Visual Echoes</h1>
+<p class="text-mahogany/60 max-w-2xl mx-auto font-light leading-relaxed">
+            A curated anthology of atmosphere and emotion. Explore our legacy of bespoke celebrations across Nairobi's most distinguished landscapes.
+        </p>
+</section>
+<section class="px-6 lg:px-20 mb-16">
+<div class="flex flex-wrap justify-center gap-4 md:gap-12 border-b border-mahogany/5 pb-8">
+<button class="filter-btn active text-[10px] uppercase tracking-[0.3em] font-bold border-b-2 py-2 transition-all">All Works</button>
+<button class="filter-btn text-[10px] uppercase tracking-[0.3em] font-bold border-b-2 py-2 transition-all hover:text-mahogany">Weddings</button>
+<button class="filter-btn text-[10px] uppercase tracking-[0.3em] font-bold border-b-2 py-2 transition-all hover:text-mahogany">Corporate</button>
+<button class="filter-btn text-[10px] uppercase tracking-[0.3em] font-bold border-b-2 py-2 transition-all hover:text-mahogany">Private Soirees</button>
+</div>
+</section>
+<section class="px-6 lg:px-20 mb-32">
+<div class="masonry max-w-[1600px] mx-auto">
+<div class="masonry-item group cursor-pointer">
+<img src="media/Catalogue/tablescapes.jpeg" alt="Chargerplates">
+<div class="absolute inset-0 bg-mahogany/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<div class="text-white">
+<p class="text-[9px] uppercase tracking-[0.2em] mb-1">Wedding</p>
+<p class="serif-heading text-xl italic">The Gilded Vow</p>
+</div>
+</div>
+</div>
+<div class="masonry-item group cursor-pointer">
+<img src="media/Gallery/gallery01.jpg" alt="Gallery">
+<div class="absolute inset-0 bg-mahogany/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<div class="text-white">
+<p class="text-[9px] uppercase tracking-[0.2em] mb-1">Corporate</p>
+<p class="serif-heading text-xl italic">Summit of Excellence</p>
+</div>
+</div>
+</div>
+<div class="masonry-item group cursor-pointer">
+<img src="media/Gallery/gallery10.jpg" alt="Gallery">
+<div class="absolute inset-0 bg-mahogany/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<div class="text-white">
+<p class="text-[9px] uppercase tracking-[0.2em] mb-1">Private Soiree</p>
+<p class="serif-heading text-xl italic">Midnight Bloom</p>
+</div>
+</div>
+</div>
+<div class="masonry-item group cursor-pointer">
+<img src="media/Gallery/gallery11.jpg" alt="Gallery">
+<div class="absolute inset-0 bg-mahogany/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<div class="text-white">
+<p class="text-[9px] uppercase tracking-[0.2em] mb-1">Detail</p>
+<p class="serif-heading text-xl italic">Petals &amp; Portraits</p>
+</div>
+</div>
+</div>
+<div class="masonry-item group cursor-pointer">
+<img src="media/Gallery/gallery07.jpg" alt="Gallery">
+<div class="absolute inset-0 bg-mahogany/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<div class="text-white">
+<p class="text-[9px] uppercase tracking-[0.2em] mb-1">Wedding</p>
+<p class="serif-heading text-xl italic">The Muthaiga Garden</p>
+</div>
+</div>
+</div>
+<div class="masonry-item group cursor-pointer">
+<img src="media/Gallery/gallery08.jpg" alt="Gallery">
+<div class="absolute inset-0 bg-mahogany/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<div class="text-white">
+<p class="text-[9px] uppercase tracking-[0.2em] mb-1">Private Soiree</p>
+<p class="serif-heading text-xl italic">Crystal Reflections</p>
+</div>
+</div>
+</div>
+<div class="masonry-item group cursor-pointer">
+<img src="media/Gallery/gallery12.jpg" alt="Gallery">
+<div class="absolute inset-0 bg-mahogany/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<div class="text-white">
+<p class="text-[9px] uppercase tracking-[0.2em] mb-1">Corporate</p>
+<p class="serif-heading text-xl italic">Linear Luxury</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-beige/20 py-32 px-6 lg:px-20">
+<div class="max-w-[1400px] mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between gap-8 mb-20 border-l border-gold/40 pl-8">
+<div>
+<span class="text-gold text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block">Regional Spotlight</span>
+<h2 class="text-mahogany text-5xl md:text-7xl serif-heading font-light">The Nairobi Series</h2>
+</div>
+<p class="text-mahogany/60 max-w-sm font-light text-sm italic">
+                    Exploring the architectural soul of Nairobi's most iconic neighborhoods through the lens of luxury events.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="group relative overflow-hidden aspect-[16/9]">
+<img src="media/Gallery/gallery08.jpg" alt="Gallery">
+<div class="absolute inset-0 bg-gradient-to-t from-mahogany/80 via-transparent to-transparent flex flex-col justify-end p-12 translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+<span class="text-gold text-[10px] font-bold tracking-[0.3em] uppercase mb-2">Wedding</span>
+<h3 class="text-white text-4xl serif-heading mb-4">The Red Rose Affair</h3>
+<p class="text-white/70 text-sm font-light leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+                            Where colonial heritage meets modern refinement. A collection of manor house celebrations and garden galas.
+                        </p>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-[16/9]">
+<img src="media/Flowers/Flower003.jpg" alt="Flowers">
+<div class="absolute inset-0 bg-gradient-to-t from-mahogany/80 via-transparent to-transparent flex flex-col justify-end p-12 translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+<span class="text-gold text-[10px] font-bold tracking-[0.3em] uppercase mb-2">Love in the air</span>
+<h3 class="text-white text-4xl serif-heading mb-4">Beautiful Purple Blooms</h3>
+<p class="text-white/70 text-sm font-light leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+                            The pulse of the city. Rooftop soirées and glass-enclosed corporate gatherings overlooking the urban horizon.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-40 px-6 text-center">
+<h2 class="serif-heading text-mahogany text-5xl md:text-7xl font-light mb-12">Inspired for <br/>Your Next Event?</h2>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="bg-gold text-mahogany px-12 py-5 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-mahogany hover:text-white transition-all shadow-lg">
+                <a href="https://wa.link/q2hmia">Book Consultation</a>
+            </button>
+<button class="border border-mahogany/20 text-mahogany px-12 py-5 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-mahogany hover:text-white transition-all">
+               <a href="services.html">Our Services</a> 
+            </button>
+</div>
+</section>
+</main>
+<footer class="bg-white py-16 px-6 lg:px-20 border-t border-mahogany/5">
+<div class="max-w-[1400px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-16">
+<div class="lg:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+    <img src="media/Assets/EA Logo.png" alt="Eventful Aura Logo" class="h-8 w-auto object-contain">
+<span class="serif-heading text-2xl tracking-widest text-mahogany uppercase">Eventful Aura</span>
+</div>
+<p class="text-mahogany/50 text-xs font-light max-w-sm leading-relaxed mb-8">
+                    An editorial approach to event planning and supply. Based in Nairobi, serving discerning clients worldwide.
+                </p>
+</div>
+<div>
+<h4 class="text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Connections</h4>
+<ul class="space-y-4">
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://www.instagram.com/eventfulaura/">Instagram</a></li>
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://www.tiktok.com/@eventfulaura">TikTok</a></li>
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://pin.it/5upcJUVL7">Pinterest</a></li>
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://www.linkedin.com/company/eventful-aura/">LinkedIn</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Contact</h4>
+<p class="text-xs text-mahogany/60 mb-2">eventfulaura@gmail.com</p>
+<p class="text-xs text-mahogany/60">+254 (0) 114545835</p>
+</div>
+</div>
+<div class="pt-8 border-t border-mahogany/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] text-mahogany/40 uppercase tracking-[0.3em] font-light">
+                © 2024 Eventful Aura by Jo. Nairobi, Kenya.
+            </p>
+<div class="flex gap-8">
+<a class="text-[10px] text-mahogany/40 uppercase tracking-widest hover:text-gold" href="#">Privacy Policy</a>
+<a class="text-[10px] text-mahogany/40 uppercase tracking-widest hover:text-gold" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>

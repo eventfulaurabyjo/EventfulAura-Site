@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Eventful Aura by Jo</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&amp;family=Manrope:wght@200..800&amp;family=Montserrat:wght@200;300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#efcc69",
+                        "gold": "#efcc69",
+                        "mahogany": "#642714",
+                        "beige": "#dfd4cf",
+                        "background-light": "#fcfbf8",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Cormorant Garamond", "serif"],
+                        "body": ["Montserrat", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Montserrat', sans-serif;
+                @apply bg-background-light text-mahogany antialiased;
+            }
+            .serif-heading {
+                font-family: 'Cormorant Garamond', serif;
+            }
+        }
+        .glass-nav {
+            background: rgba(252, 251, 248, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .input-underline {
+            @apply bg-transparent border-0 border-b border-mahogany/20 focus:ring-0 focus:border-gold px-0 py-3 transition-all duration-300;
+        }
+        .soft-map-overlay {
+            mix-blend-mode: multiply;
+            filter: grayscale(100%) sepia(20%) contrast(90%);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<header class="fixed top-0 left-0 w-full z-50 px-6 py-6 lg:px-12">
+<nav class="glass-nav border border-mahogany/10 flex items-center justify-between px-10 py-4 rounded-full shadow-sm">
+<div class="flex items-center gap-3">
+<div class="flex items-center">
+        <img src="media/Assets/EA Logo.png" alt="Eventful Aura Logo" class="h-8 w-auto object-contain">
+      </div>
+<h2 class="text-mahogany text-sm font-semibold tracking-[0.3em] uppercase serif-heading">Eventful Aura</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="index.html">Home</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="services.html">Our Services</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="aboutus.html">About Us</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="catalogue.html">Our Catalogue</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="gallery.html">Gallery</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="contact.html">Contact Us</a>
+</div>
+<button class="bg-gold text-mahogany px-8 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-mahogany hover:text-white transition-all shadow-sm">
+            <a href="https://wa.link/q2hmia">Book Consultation</a>
+        </button>
+</nav>
+</header>
+<section class="pt-48 pb-20 px-6 lg:px-20">
+<div class="max-w-[1400px] mx-auto">
+<span class="text-gold text-xs font-bold tracking-[0.4em] uppercase mb-6 block text-center lg:text-left">Inquiry</span>
+<h1 class="text-mahogany text-6xl md:text-8xl serif-heading font-light leading-tight mb-12 text-center lg:text-left">
+                Let’s Compose <br/>Your <span class="italic">Symphony</span>
+</h1>
+</div>
+</section>
+<main class="max-w-[1400px] mx-auto px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-12 gap-20 pb-40">
+<div class="lg:col-span-7">
+<form class="flex flex-col gap-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="flex flex-col">
+<label class="text-[10px] uppercase font-bold tracking-widest text-mahogany/50 mb-2">Full Name</label>
+<input class="input-underline text-mahogany placeholder:text-mahogany/30 font-light" placeholder="Your Name" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="text-[10px] uppercase font-bold tracking-widest text-mahogany/50 mb-2">Email Address</label>
+<input class="input-underline text-mahogany placeholder:text-mahogany/30 font-light" placeholder="hello@example.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="flex flex-col">
+<label class="text-[10px] uppercase font-bold tracking-widest text-mahogany/50 mb-2">Event Date</label>
+<input class="input-underline text-mahogany font-light" type="date"/>
+</div>
+<div class="flex flex-col">
+<label class="text-[10px] uppercase font-bold tracking-widest text-mahogany/50 mb-2">Estimated Guest Count</label>
+<select class="input-underline text-mahogany font-light">
+<option value="">Select Range</option>
+<option value="50">Under 50 Guests</option>
+<option value="150">50 - 150 Guests</option>
+<option value="300">150 - 300 Guests</option>
+<option value="500">300+ Guests</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="text-[10px] uppercase font-bold tracking-widest text-mahogany/50 mb-2">Service Interest</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-none border-mahogany/20 text-gold focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+<span class="text-xs uppercase tracking-widest font-medium text-mahogany/80 group-hover:text-mahogany transition-colors">Full Planning</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-none border-mahogany/20 text-gold focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+<span class="text-xs uppercase tracking-widest font-medium text-mahogany/80 group-hover:text-mahogany transition-colors">Floral Art</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded-none border-mahogany/20 text-gold focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+<span class="text-xs uppercase tracking-widest font-medium text-mahogany/80 group-hover:text-mahogany transition-colors">Equipment Hire</span>
+</label>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="text-[10px] uppercase font-bold tracking-widest text-mahogany/50 mb-2">Your Vision</label>
+<textarea class="input-underline text-mahogany placeholder:text-mahogany/30 font-light resize-none" placeholder="Tell us about the atmosphere you wish to create..." rows="4"></textarea>
+</div>
+<div>
+<button class="bg-mahogany text-white px-12 py-5 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-gold hover:text-mahogany transition-all" type="submit">
+                        Request a Tailored Quote
+                    </button>
+</div>
+</form>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-16">
+<div class="p-12 bg-beige/20 border border-mahogany/5 rounded-sm">
+<h3 class="serif-heading text-3xl mb-8">Nairobi Office</h3>
+<div class="space-y-6">
+<div>
+<p class="text-[10px] uppercase font-bold tracking-widest text-mahogany/50 mb-1">Location</p>
+<p class="text-sm font-light leading-relaxed">46 Kigwa Rd, <br/>Garden Estate</p>
+</div>
+<div>
+<p class="text-[10px] uppercase font-bold tracking-widest text-mahogany/50 mb-1">General Inquiries</p>
+<p class="text-sm font-light">eventfulaura@gmail.com</p>
+</div>
+<div>
+<p class="text-[10px] uppercase font-bold tracking-widest text-mahogany/50 mb-1">Direct Line</p>
+<p class="text-sm font-light">+254 (0) 114545835</p>
+</div>
+</div>
+<div class="mt-12 pt-12 border-t border-mahogany/10">
+<p class="text-[10px] uppercase font-bold tracking-widest text-mahogany/50 mb-4">Follow the Journey</p>
+<div class="flex gap-6">
+<a class="text-mahogany hover:text-gold transition-colors uppercase text-[10px] font-bold tracking-widest" href="https://www.instagram.com/eventfulaura/">Instagram</a>
+<a class="text-mahogany hover:text-gold transition-colors uppercase text-[10px] font-bold tracking-widest" href="https://pin.it/5upcJUVL7">Pinterest</a>
+<a class="text-mahogany hover:text-gold transition-colors uppercase text-[10px] font-bold tracking-widest" href="https://www.tiktok.com/@eventfulaura">TikTok</a>
+<a class="text-mahogany hover:text-gold transition-colors uppercase text-[10px] font-bold tracking-widest" href="https://www.linkedin.com/company/eventful-aura/">LinkedIn</a>
+</div>
+</div>
+</div>
+<div class="relative h-80 w-full overflow-hidden rounded-sm grayscale group">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9052750770925!2d36.851168699999995!3d-1.2257884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f170c44dfeb9f%3A0x395df08350fe2ab0!2sMintz%20lights!5e0!3m2!1sen!2ske!4v1769266882886!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="absolute inset-0 pointer-events-none ring-1 ring-inset ring-mahogany/10"></div>
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-mahogany/5">
+<span class="text-[9px] uppercase font-bold tracking-widest flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                        Central Nairobi
+                    </span>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-white py-16 px-6 lg:px-20 border-t border-mahogany/5">
+<div class="max-w-[1400px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-16">
+<div class="lg:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+    <img src="media/Assets/EA Logo.png" alt="Eventful Aura Logo" class="h-8 w-auto object-contain">
+<span class="serif-heading text-2xl tracking-widest text-mahogany uppercase">Eventful Aura</span>
+</div>
+<p class="text-mahogany/50 text-xs font-light max-w-sm leading-relaxed mb-8">
+                    An editorial approach to event planning and supply. Based in Nairobi, serving discerning clients worldwide.
+                </p>
+</div>
+<div>
+<h4 class="text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Connections</h4>
+<ul class="space-y-4">
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://www.instagram.com/eventfulaura/">Instagram</a></li>
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://www.tiktok.com/@eventfulaura">TikTok</a></li>
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://pin.it/5upcJUVL7">Pinterest</a></li>
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://www.linkedin.com/company/eventful-aura/">LinkedIn</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Contact</h4>
+<p class="text-xs text-mahogany/60 mb-2">eventfulaura@gmail.com</p>
+<p class="text-xs text-mahogany/60">+254 (0) 114545835</p>
+</div>
+</div>
+<div class="pt-8 border-t border-mahogany/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] text-mahogany/40 uppercase tracking-[0.3em] font-light">
+                © 2024 Eventful Aura by Jo. Nairobi, Kenya.
+            </p>
+<div class="flex gap-8">
+<a class="text-[10px] text-mahogany/40 uppercase tracking-widest hover:text-gold" href="#">Privacy Policy</a>
+<a class="text-[10px] text-mahogany/40 uppercase tracking-widest hover:text-gold" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>

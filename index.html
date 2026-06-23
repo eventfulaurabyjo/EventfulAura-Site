@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eventful Aura by Jo | Refined Luxury Services &amp; Supply</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&amp;family=Manrope:wght@200..800&amp;family=Montserrat:wght@200;300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#efcc69",
+                        "gold": "#efcc69",
+                        "mahogany": "#642714",
+                        "beige": "#dfd4cf",
+                        "background-light": "#fcfbf8",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Cormorant Garamond", "serif"],
+                        "body": ["Montserrat", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Montserrat', sans-serif;
+                @apply bg-background-light text-mahogany antialiased;
+            }
+            .serif-heading {
+                font-family: 'Cormorant Garamond', serif;
+            }
+        }
+        .glass-nav {
+            background: rgba(252, 251, 248, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .layered-image-shadow {
+            box-shadow: 20px 20px 60px rgba(100, 39, 20, 0.1);
+        }
+        .masonry {
+            column-count: 2;
+            column-gap: 2rem;
+        }
+        @media (min-width: 1024px) {
+            .masonry {
+                column-count: 3;
+            }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+        .service-card .details-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .service-card:hover .details-reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .service-card .service-image {
+            transition: transform 0.8s;
+        }
+        .service-card:hover .service-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<header class="fixed top-0 left-0 w-full z-50 px-6 py-6 lg:px-12">
+<nav class="glass-nav border border-mahogany/10 flex items-center justify-between px-10 py-4 rounded-full shadow-sm">
+<div class="flex items-center gap-3">
+<div class="flex items-center">
+        <img src="media/Assets/EA Logo.png" alt="Eventful Aura Logo" class="h-8 w-auto object-contain">
+      </div>
+<h2 class="text-mahogany text-sm font-semibold tracking-[0.3em] uppercase serif-heading">Eventful Aura</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="index.html">Home</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="services.html">Our Services</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="aboutus.html">About Us</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="catalogue.html">Our Catalogue</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="gallery.html">Gallery</a>
+<a class="text-mahogany text-[10px] font-bold tracking-[0.15em] uppercase hover:text-gold transition-colors" href="contact.html">Contact Us</a>
+</div>
+<button class="bg-gold text-mahogany px-8 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-mahogany hover:text-white transition-all shadow-sm">
+            <a href="https://wa.link/q2hmia">Book Consultation</a>
+        </button>
+</nav>
+</header>
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-mahogany/30 z-10"></div>
+<div class="w-full h-full bg-cover bg-center scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBoqkIVrd8vQXau6GkEHcnmz1VDYocnhBvhUz8rw3tWuemzeow7oNcWthYb7QPUD4CuG7MiTw5l7RUkhHsFCyrM1z8oIakEZo4QimUB1qd9MYOPNdZ1XQtcwN-6bJEVakBe04rZK59sK6k8fdftVouGgQbAGjjDa09dWSKaRLF60C7VO3exMPKgqYityBt9SV_wP3X4YEy1UYzRHF3DcSazsCoJLHR01D2cFwpmr8i9-3GcvDUd4sHwrhPtET3i2arNtGyVcqgYkDaM');"></div>
+</div>
+<div class="relative z-20 text-center px-4 max-w-5xl">
+<h1 class="text-white text-7xl md:text-[10rem] font-light tracking-tighter serif-heading leading-tight mb-4">
+            Aura <span class="italic font-light opacity-80">&amp;</span> Art
+        </h1>
+<p class="text-white/90 text-xs md:text-sm font-light tracking-[0.6em] uppercase">
+            Curation • Atmosphere • Legacy 
+        </p>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 text-white/50 text-[10px] tracking-[0.4em] uppercase flex flex-col items-center gap-4">
+<span>Scroll to Explore</span>
+<div class="w-px h-12 bg-white/30"></div>
+</div>
+</section>
+<section class="relative py-32 px-6 lg:px-20 bg-background-light overflow-hidden">
+<div class="max-w-[1400px] mx-auto grid grid-cols-12 gap-8 items-center">
+<div class="col-span-12 lg:col-span-7 relative">
+<div class="relative z-10 w-4/5 ml-auto layered-image-shadow overflow-hidden rounded-sm">
+<img src="media/Catalogue/backdrop.jpeg" alt="Backdrops">
+</div>
+<div class="absolute -bottom-12 -left-4 z-20 w-3/5 layered-image-shadow border-[12px] border-white overflow-hidden rounded-sm">
+<img src="media/Backdrops/welcomeBard.jpg" alt="A-Frame Milluxe">
+</div>
+<div class="absolute top-1/2 -left-12 -translate-y-1/2 text-[12rem] serif-heading text-mahogany/5 font-bold pointer-events-none uppercase">
+                Aura
+            </div>
+</div>
+<div class="col-span-12 lg:col-span-5 lg:pl-12 mt-20 lg:mt-0">
+<span class="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-6 block">Our Aura</span>
+<h2 class="text-mahogany text-5xl md:text-6xl serif-heading font-light leading-tight mb-8">Redefining Events to Experiences</h2>
+<p class="text-mahogany/70 text-base font-light leading-relaxed mb-10 max-w-md">
+                We don't just plan events; we architect atmospheres. Every texture, light and shadow is curated to tell a story of effortless luxury and profound elegance.
+            </p>
+<div class="flex items-center gap-6">
+<div class="h-px w-16 bg-mahogany"></div>
+<a class="text-[10px] uppercase tracking-[0.3em] font-bold hover:text-gold transition-colors">The Experience</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-white px-6 lg:px-20">
+<div class="max-w-[1400px] mx-auto">
+<div class="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div>
+<span class="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Supplies &amp; Catalogue</span>
+<h2 class="text-mahogany text-5xl md:text-7xl serif-heading font-light">The Curated Collection</h2>
+</div>
+<button class="bg-mahogany text-white px-10 py-4 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-gold hover:text-mahogany transition-all" >
+               <a href="catalogue.html">View Full Catalogue</a> 
+            </button>
+</div>
+<div class="grid grid-cols-12 gap-8 lg:gap-12">
+<div class="col-span-12 md:col-span-7 flex flex-col gap-12">
+<div class="relative overflow-hidden group">
+    <img src="media/catalogue/AFrameMilluxe.webp" alt="A-Frame Milluxe">
+<div class="mt-6">
+<h3 class="serif-heading text-2xl text-mahogany mb-2">Architectural Structures</h3>
+<p class="text-mahogany/60 text-xs tracking-wider uppercase">A-Frame Tents • B-Line Tents • Custom Stages • Portable Bar</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="col-span-1">
+<img src="media/catalogue/goldChiavari.jpeg" alt="Gold Chiavari">
+<h4 class="serif-heading text-xl mt-4 text-mahogany">Designer Seating</h4>
+<p class="text-mahogany/60 text-[10px] uppercase tracking-widest">Ghost Chairs • Velvet Ottomans</p>
+</div>
+<div class="col-span-1 pt-12">
+<img src="media/catalogue/tablescapes.jpeg" alt="Chargerplate">
+<h4 class="serif-heading text-xl mt-4 text-mahogany">Fine Tableware</h4>
+<p class="text-mahogany/60 text-[10px] uppercase tracking-widest">Gold Accents • Crystal Glassware</p>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 flex flex-col gap-12 md:pt-32">
+<div class="relative overflow-hidden">
+    <img src="media/catalogue/chandelier.jpeg" alt="chandelier">
+<div class="mt-6">
+<h3 class="serif-heading text-2xl text-mahogany mb-2">Atmospheric Lighting</h3>
+<p class="text-mahogany/60 text-xs tracking-wider uppercase">Pendant Art • Mood Scaping • Kinetic Lights</p>
+</div>
+</div>
+<div class="bg-beige/30 p-12 flex flex-col items-center text-center justify-center border border-mahogany/5">
+<span class="material-symbols-outlined text-mahogany/30 text-5xl mb-6">inventory_2</span>
+<h3 class="serif-heading text-3xl text-mahogany mb-4">Bespoke Fabrication</h3>
+<p class="text-mahogany/70 text-sm font-light leading-relaxed mb-8 italic">
+                        Can't find the piece you envision? Eventful Aura's workshop crafts custom furniture and backdrops specifically for your event's theme.
+                    </p>
+<a class="text-[10px] font-bold uppercase tracking-[0.3em] text-mahogany border-b border-mahogany/20 pb-1" href="https://wa.link/q2hmia">Inquire for Custom Work</a> 
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-background-light overflow-hidden">
+<div class="max-w-[1400px] mx-auto px-6 lg:px-20 mb-16 flex justify-between items-end">
+<div>
+<span class="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Services</span>
+<h2 class="text-mahogany text-4xl md:text-5xl serif-heading font-light">Bespoke Offerings</h2>
+</div>
+</div>
+<div class="flex overflow-x-auto gap-12 px-6 lg:px-20 pb-12 hide-scrollbar snap-x snap-mandatory">
+<div class="service-card min-w-[320px] md:min-w-[450px] snap-start group relative aspect-[4/5] overflow-hidden rounded-sm">
+
+<img src="media/Catalogue/backdrop.jpeg" alt="Backdrops" class="service-image absolute inset-0 w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-mahogany/90 via-mahogany/20 to-transparent transition-opacity duration-500 opacity-60 group-hover:opacity-90"></div>
+<div class="relative h-full w-full p-12 flex flex-col justify-end text-white">
+<span class="text-[10px] text-gold font-bold tracking-[0.4em] mb-4">01.</span>
+<h3 class="serif-heading text-3xl mb-4">Full Planning &amp; Design</h3>
+<div class="details-reveal">
+<p class="text-white/80 text-sm font-light leading-relaxed mb-8">A comprehensive journey from initial concept to the final toast, managed with precision and artistic vision.</p>
+<a class="inline-flex items-center gap-4 text-[10px] uppercase font-bold tracking-widest text-gold" href="services.html">Explore <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<div class="service-card min-w-[320px] md:min-w-[450px] snap-start group relative aspect-[4/5] overflow-hidden rounded-sm">
+<img src="media/Flowers/Flower.jpg" alt="Backdrops" class="service-image absolute inset-0 w-full h-full object-cover">
+
+<div class="absolute inset-0 bg-gradient-to-t from-mahogany/90 via-mahogany/20 to-transparent transition-opacity duration-500 opacity-60 group-hover:opacity-90"></div>
+<div class="relative h-full w-full p-12 flex flex-col justify-end text-white">
+<span class="text-[10px] text-gold font-bold tracking-[0.4em] mb-4">02.</span>
+<h3 class="serif-heading text-3xl mb-4">Floral Sculpting</h3>
+<div class="details-reveal">
+<p class="text-white/80 text-sm font-light leading-relaxed mb-8">Artistic floral arrangements that serve as living installations, designed to breathe life into your venue.</p>
+<a class="inline-flex items-center gap-4 text-[10px] uppercase font-bold tracking-widest text-gold" href="services.html">Explore <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<div class="service-card min-w-[320px] md:min-w-[450px] snap-start group relative aspect-[4/5] overflow-hidden rounded-sm">
+
+<img src="media/Gallery/CustomCards.jpg" alt="Backdrops" class="service-image absolute inset-0 w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-mahogany/90 via-mahogany/20 to-transparent transition-opacity duration-500 opacity-60 group-hover:opacity-90"></div>
+<div class="relative h-full w-full p-12 flex flex-col justify-end text-white">
+<span class="text-[10px] text-gold font-bold tracking-[0.4em] mb-4">03.</span>
+<h3 class="serif-heading text-3xl mb-4">Event Branding</h3>
+<div class="details-reveal">
+<p class="text-white/80 text-sm font-light leading-relaxed mb-8">From custom stationary to digital experiences, we ensure your event's identity is cohesive and memorable.</p>
+<a class="inline-flex items-center gap-4 text-[10px] uppercase font-bold tracking-widest text-gold" href="services.html">Explore <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-beige py-32 px-6">
+<div class="max-w-4xl mx-auto text-center py-20">
+<span class="material-symbols-outlined text-mahogany/20 text-7xl mb-12">format_quote</span>
+<blockquote class="serif-heading text-mahogany text-3xl md:text-5xl lg:text-6xl font-light italic leading-snug">
+            "The Eventful Aura team didn't just plan our wedding; they created a world that felt entirely ours. Every corner of the reception felt like a love letter to our story."
+        </blockquote>
+<div class="mt-12">
+<span class="text-mahogany font-medium tracking-[0.3em] uppercase text-[10px]">— Sarah &amp; David, New Runda Estate</span>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 lg:px-20 bg-white">
+<div class="max-w-[1400px] mx-auto">
+<div class="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<h2 class="text-mahogany text-5xl md:text-7xl serif-heading font-light">Captured<br/>Moments</h2>
+<p class="text-mahogany/60 max-w-sm font-light text-sm italic">
+                A glimpse into our world of curated atmospheres and high-end celebrations across Nairobi's most prestigious locations.
+            </p>
+</div>
+<div class="masonry">
+<div class="masonry-item rounded-sm overflow-hidden">
+<img src="media/Gallery/gallery01.jpg" alt="Gallery">
+</div>
+<div class="masonry-item rounded-sm overflow-hidden">
+<img src="media/Gallery/gallery02.JPG" alt="Gallery">
+</div>
+<div class="masonry-item rounded-sm overflow-hidden aspect-[3/4]">
+<img src="media/Gallery/gallery05.JPG" alt="Gallery">
+</div>
+<div class="masonry-item rounded-sm overflow-hidden">
+<img src="media/Gallery/gallery06.jpg" alt="Gallery">
+</div>
+<div class="masonry-item rounded-sm overflow-hidden aspect-square">
+<img src="media/Gallery/gallery07.jpg" alt="Gallery">
+</div>
+<div class="masonry-item rounded-sm overflow-hidden">
+<img src="media/Gallery/gallery08.jpg" alt="Gallery">
+</div>
+</div>
+<div class="mt-20 text-center">
+<button class="border border-mahogany/20 text-mahogany px-12 py-5 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-mahogany hover:text-white transition-all">
+                
+            <a href="gallery.html">The Full Portfolio</a></button>
+</div>
+</div>
+</section>
+<section class="py-40 bg-background-light overflow-hidden">
+<div class="max-w-[1400px] mx-auto text-center relative">
+<div class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">
+<span class="serif-heading text-[25rem] whitespace-nowrap font-bold uppercase">EVENTFUL</span>
+</div>
+<div class="relative z-10">
+<h2 class="serif-heading text-mahogany text-6xl md:text-[8rem] font-light leading-none tracking-tight">
+                Aura is an <br/>
+<span class="italic font-normal text-gold">Experience</span>
+</h2>
+<div class="mt-16 flex justify-center">
+<div class="w-px h-24 bg-mahogany/20"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-mahogany py-32 px-6">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="serif-heading text-white text-5xl md:text-7xl mb-12">Let's Create<br/>Your Legacy</h2>
+<div class="flex flex-col md:flex-row items-center justify-center gap-8">
+<button class="bg-gold text-mahogany px-12 py-5 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-white transition-all w-full md:w-auto"> 
+                <a href="https://calendly.com/eventfulaffairke/book-consultation">Secure Your Date</a></button>
+<button class="border border-white/20 text-white px-12 py-5 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-white hover:text-mahogany transition-all w-full md:w-auto"><a href="https://wa.link/q2hmia">Book Consultation</a>
+</button>
+</div>
+</div>
+</section>
+<footer class="bg-white py-16 px-6 lg:px-20 border-t border-mahogany/5">
+<div class="max-w-[1400px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-16">
+<div class="lg:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+    <img src="media/Assets/EA Logo.png" alt="Eventful Aura Logo" class="h-8 w-auto object-contain">
+<span class="serif-heading text-2xl tracking-widest text-mahogany uppercase">Eventful Aura</span>
+</div>
+<p class="text-mahogany/50 text-xs font-light max-w-sm leading-relaxed mb-8">
+                    An editorial approach to event planning and supply. Based in Nairobi, serving discerning clients worldwide.
+                </p>
+</div>
+<div>
+<h4 class="text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Connections</h4>
+<ul class="space-y-4">
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://www.instagram.com/eventfulaura/">Instagram</a></li>
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://www.tiktok.com/@eventfulaura">TikTok</a></li>
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://pin.it/5upcJUVL7">Pinterest</a></li>
+<li><a class="text-xs text-mahogany/60 hover:text-gold transition-colors" href="https://www.linkedin.com/company/eventful-aura/">LinkedIn</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Contact</h4>
+<p class="text-xs text-mahogany/60 mb-2">eventfulaura@gmail.com</p>
+<p class="text-xs text-mahogany/60">+254 (0) 114545835</p>
+</div>
+</div>
+<div class="pt-8 border-t border-mahogany/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] text-mahogany/40 uppercase tracking-[0.3em] font-light">
+                © 2024 Eventful Aura by Jo. Nairobi, Kenya.
+            </p>
+<div class="flex gap-8">
+<a class="text-[10px] text-mahogany/40 uppercase tracking-widest hover:text-gold" href="#">Privacy Policy</a>
+<a class="text-[10px] text-mahogany/40 uppercase tracking-widest hover:text-gold" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
