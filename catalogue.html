@@ -48,11 +48,17 @@
         .product-card:hover {
             transform: translateY(-8px);
         }
+        .product-card.hidden {
+            display: none !important;
+        }
         .filter-btn.active {
             @apply border-mahogany text-mahogany;
         }
         .filter-btn:not(.active) {
             @apply border-transparent text-mahogany/40 hover:text-mahogany/70;
+        }
+        .filter-btn {
+            cursor: pointer;
         }
         .cart-badge {
             font-size: 8px;
@@ -95,26 +101,25 @@
 </section>
 <section class="px-6 lg:px-20 mb-16">
 <div class="flex flex-wrap justify-center gap-4 border-b border-mahogany/10 pb-8">
-<button class="filter-btn active px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all">All Items</button>
-<button class="filter-btn px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all">Tents &amp; Structures</button>
-<button class="filter-btn px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all">Seating</button>
-<button class="filter-btn px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all">Lighting</button>
-<button class="filter-btn px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all">Tables &amp; Linen</button>
-<button class="filter-btn px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all">Fine Tableware</button>
+<button class="filter-btn active px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="all">All Items</button>
+<button class="filter-btn px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="tents">Tents &amp; Structures</button>
+<button class="filter-btn px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="seating">Seating</button>
+<button class="filter-btn px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="lighting">Lighting</button>
+<button class="filter-btn px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="tables">Tables &amp; Linen</button>
+<button class="filter-btn px-6 py-2 border-b-2 text-[10px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="tableware">Fine Tableware</button>
 </div>
 </section>
 <section class="px-6 lg:px-20">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20 max-w-[1400px] mx-auto">
-<div class="product-card group">
+<!-- Product 1: A-Frame Milluxe Tent -->
+<div class="product-card group" data-category="tents">
 <div class="bg-beige/20 aspect-[4/5] rounded-sm flex items-center justify-center p-12 mb-6 relative overflow-hidden">
 <img src="media/Catalogue/AFrameMilluxe.webp" alt="A-Frame Milluxe">
-
-</button>
 </div>
 <div class="flex justify-between items-start mb-4">
 <div>
 <h3 class="serif-heading text-2xl text-mahogany">A-Frame Milluxe Tent</h3>
-<p class="text-[10px] text-mahogany/50 uppercase tracking-widest mt-1">Seating • Clean White</p>
+<p class="text-[10px] text-mahogany/50 uppercase tracking-widest mt-1">Tents &amp; Structures • Clean White</p>
 </div>
 </div>
 <div class="space-y-3 pt-4 border-t border-mahogany/5">
@@ -128,17 +133,12 @@
 </div>
 </div>
 <button class="w-full mt-6 py-4 border border-mahogany/20 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-mahogany hover:text-white transition-colors">Request Quote</button> 
-
-
 </div>
-<div class="product-card group">
+
+<!-- Product 2: Magnolia Luxury Chairs -->
+<div class="product-card group" data-category="seating">
 <div class="bg-beige/20 aspect-[4/5] rounded-sm flex items-center justify-center p-12 mb-6 relative overflow-hidden">
 <img src="media/Catalogue/magnoliaChairs.jpeg" alt="Magnolia Luxury Chairs">
-
-<!--
-<button class="absolute bottom-6 right-6 bg-white/90 backdrop-blur text-mahogany p-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-gold">
-<span class="material-symbols-outlined text-xl">add_shopping_cart</span>
-</button> -->
 </div>
 <div class="flex justify-between items-start mb-4">
 <div>
@@ -159,17 +159,16 @@
 
 <button class="w-full mt-6 py-4 border border-mahogany/20 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-mahogany hover:text-white transition-colors">Request Quote</button>
 </div>
-<div class="product-card group">
+
+<!-- Product 3: Glass Clear Chargerplates -->
+<div class="product-card group" data-category="tableware">
 <div class="bg-beige/20 aspect-[4/5] rounded-sm flex items-center justify-center p-12 mb-6 relative overflow-hidden">
 <img src="media/Catalogue/tablescapes.jpeg" alt="Chargerplates">
-<!--<button class="absolute bottom-6 right-6 bg-white/90 backdrop-blur text-mahogany p-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-gold">
-<span class="material-symbols-outlined text-xl">add_shopping_cart</span> 
-</button> -->
 </div>
 <div class="flex justify-between items-start mb-4">
 <div>
-<h3 class="serif-heading text-2xl text-mahogany">Glass clear Chargerplates</h3>
-<p class="text-[10px] text-mahogany/50 uppercase tracking-widest mt-1">Tablescapes • Clear Glass</p>
+<h3 class="serif-heading text-2xl text-mahogany">Glass Clear Chargerplates</h3>
+<p class="text-[10px] text-mahogany/50 uppercase tracking-widest mt-1">Fine Tableware • Clear Glass</p>
 </div>
 </div>
 <div class="space-y-3 pt-4 border-t border-mahogany/5">
@@ -184,17 +183,16 @@
 </div>
 <button class="w-full mt-6 py-4 border border-mahogany/20 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-mahogany hover:text-white transition-colors">Request Quote</button>
 </div>
-<div class="product-card group">
+
+<!-- Product 4: B-Line Tent -->
+<div class="product-card group" data-category="tents">
 <div class="bg-beige/20 aspect-[4/5] rounded-sm flex items-center justify-center p-12 mb-6 relative overflow-hidden">
 <img src="media/Catalogue/b-line.jpg" alt="B-Line Tent">
-<!--<button class="absolute bottom-6 right-6 bg-white/90 backdrop-blur text-mahogany p-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-gold">
-<span class="material-symbols-outlined text-xl">add_shopping_cart</span> 
-</button>-->
 </div>
 <div class="flex justify-between items-start mb-4">
 <div>
 <h3 class="serif-heading text-2xl text-mahogany">B-Line Tent</h3>
-<p class="text-[10px] text-mahogany/50 uppercase tracking-widest mt-1">Seating • Luxury Tent</p>
+<p class="text-[10px] text-mahogany/50 uppercase tracking-widest mt-1">Tents &amp; Structures • Luxury Tent</p>
 </div>
 </div>
 <div class="space-y-3 pt-4 border-t border-mahogany/5">
@@ -209,12 +207,11 @@
 </div>
 <button class="w-full mt-6 py-4 border border-mahogany/20 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-mahogany hover:text-white transition-colors">Request Quote</button>
 </div>
-<div class="product-card group">
+
+<!-- Product 5: Luxe Chandelier -->
+<div class="product-card group" data-category="lighting">
 <div class="bg-beige/20 aspect-[4/5] rounded-sm flex items-center justify-center p-12 mb-6 relative overflow-hidden">
 <img src="media/Catalogue/chandelier.jpeg" alt="Chandelier">
-<!--<button class="absolute bottom-6 right-6 bg-white/90 backdrop-blur text-mahogany p-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-gold">
-<span class="material-symbols-outlined text-xl">add_shopping_cart</span> 
-</button> -->
 </div>
 <div class="flex justify-between items-start mb-4">
 <div>
@@ -229,11 +226,13 @@
 </div>
 <div class="flex justify-between text-[10px] uppercase tracking-wider">
 <span class="text-mahogany/40">Color</span>
-<span class="text-mahogany font-medium">Clear & Gold</span>
+<span class="text-mahogany font-medium">Clear &amp; Gold</span>
 </div>
 </div>
 <button class="w-full mt-6 py-4 border border-mahogany/20 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-mahogany hover:text-white transition-colors">Request Quote</button>
 </div>
+
+<!-- Bespoke Fabrication Section -->
 <div class="bg-mahogany p-12 flex flex-col items-center text-center justify-center rounded-sm">
 <span class="material-symbols-outlined text-gold/30 text-6xl mb-8">draw</span>
 <h3 class="serif-heading text-3xl text-white mb-6">Bespoke Fabrication</h3>
@@ -252,9 +251,6 @@
                 Add items to your quote request and our concierge team will provide a detailed logistical proposal within 24 hours.
             </p>
 <div class="flex flex-col md:flex-row gap-6 justify-center">
-<!--
-<button class="border border-white/20 text-white px-12 py-5 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-white hover:text-mahogany transition-all w-full md:w-auto"><a href="https://wa.link/q2hmia">Book Consultation</a>
-</button> -->
 <button class="border border-mahogany/20 text-mahogany px-12 py-5 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-mahogany hover:text-white transition-all">
                     Download Full PDF Price List
                 </button>
@@ -301,5 +297,38 @@
 </div>
 </footer>
 
+<!-- Filter Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card[data-category]');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Get the filter value
+            const filterValue = this.getAttribute('data-filter');
+            
+            // Show/hide products based on filter
+            productCards.forEach(card => {
+                if (filterValue === 'all') {
+                    card.classList.remove('hidden');
+                } else {
+                    if (card.getAttribute('data-category') === filterValue) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    });
+});
+</script>
 
 </body></html>
